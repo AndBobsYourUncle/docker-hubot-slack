@@ -74,6 +74,7 @@ VOLUME $HUBOT_HOME/config
 # Exposing node-inspector
 EXPOSE 8123
 EXPOSE 5858
+EXPOSE 8080
 
 USER root
 ENV PATH /opt/hubot/node_modules/.bin:/opt/hubot/node_modules/hubot/node_modules/.bin:${PATH}
