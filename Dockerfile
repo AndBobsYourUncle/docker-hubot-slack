@@ -53,7 +53,7 @@ WORKDIR $HUBOT_HOME
 RUN npm install --global coffee-script yo generator-hubot node-inspector
 
 USER hubot
-RUN npm install github:slackhq/hubot-slack#don_migrate_to_slack-node-sdk_v3.x --save
+RUN npm install hubot-slack --save
 # Install slack adapter by default
 RUN yo hubot --owner="Bot Wrangler " --name="Hubot" --description="Delightfully aware robutt" --adapter=slack --defaults
 
